@@ -124,7 +124,7 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
-            btnEliminar.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Trash;
             btnEliminar.IconColor = Color.White;
             btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEliminar.ImageAlign = ContentAlignment.TopCenter;
@@ -139,7 +139,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = Color.Tan;
+            btnGuardar.BackColor = Color.ForestGreen;
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.ForeColor = Color.White;

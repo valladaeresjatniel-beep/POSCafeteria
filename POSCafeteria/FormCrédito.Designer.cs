@@ -36,13 +36,13 @@
             label6 = new Label();
             dtvcrédito = new DataGridView();
             panel2 = new Panel();
-            btnborrarcrédito = new Button();
-            btnguardarcrédito = new Button();
             txtprecio = new TextBox();
             label5 = new Label();
             label4 = new Label();
             txtclientecrédito = new TextBox();
             txtproducto = new TextBox();
+            btneliminarcrédito = new FontAwesome.Sharp.IconButton();
+            btnguardarcrédito = new FontAwesome.Sharp.IconButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtvcrédito).BeginInit();
@@ -87,7 +87,7 @@
             panel1.Controls.Add(dtvcrédito);
             panel1.Location = new Point(310, 137);
             panel1.Name = "panel1";
-            panel1.Size = new Size(828, 447);
+            panel1.Size = new Size(970, 510);
             panel1.TabIndex = 3;
             // 
             // iconPictureBox1
@@ -100,7 +100,7 @@
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox1.IconSize = 40;
             iconPictureBox1.InitialImage = null;
-            iconPictureBox1.Location = new Point(69, 8);
+            iconPictureBox1.Location = new Point(38, 11);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(40, 40);
             iconPictureBox1.TabIndex = 3;
@@ -110,7 +110,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(115, 14);
+            label6.Location = new Point(84, 17);
             label6.Name = "label6";
             label6.Size = new Size(198, 25);
             label6.TabIndex = 1;
@@ -120,17 +120,17 @@
             // 
             dtvcrédito.AllowUserToOrderColumns = true;
             dtvcrédito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtvcrédito.Location = new Point(3, 54);
+            dtvcrédito.Location = new Point(-1, 74);
             dtvcrédito.Name = "dtvcrédito";
             dtvcrédito.RowHeadersWidth = 51;
-            dtvcrédito.Size = new Size(821, 388);
+            dtvcrédito.Size = new Size(966, 435);
             dtvcrédito.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(btnborrarcrédito);
             panel2.Controls.Add(btnguardarcrédito);
+            panel2.Controls.Add(btneliminarcrédito);
             panel2.Controls.Add(txtprecio);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
@@ -139,32 +139,8 @@
             panel2.Controls.Add(label3);
             panel2.Location = new Point(3, 137);
             panel2.Name = "panel2";
-            panel2.Size = new Size(305, 443);
+            panel2.Size = new Size(305, 510);
             panel2.TabIndex = 4;
-            // 
-            // btnborrarcrédito
-            // 
-            btnborrarcrédito.BackColor = Color.IndianRed;
-            btnborrarcrédito.FlatStyle = FlatStyle.Popup;
-            btnborrarcrédito.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnborrarcrédito.Location = new Point(17, 331);
-            btnborrarcrédito.Name = "btnborrarcrédito";
-            btnborrarcrédito.Size = new Size(99, 43);
-            btnborrarcrédito.TabIndex = 9;
-            btnborrarcrédito.Text = "Borrar\r\n";
-            btnborrarcrédito.UseVisualStyleBackColor = false;
-            // 
-            // btnguardarcrédito
-            // 
-            btnguardarcrédito.BackColor = Color.DarkSeaGreen;
-            btnguardarcrédito.FlatStyle = FlatStyle.Popup;
-            btnguardarcrédito.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnguardarcrédito.Location = new Point(163, 331);
-            btnguardarcrédito.Name = "btnguardarcrédito";
-            btnguardarcrédito.Size = new Size(99, 43);
-            btnguardarcrédito.TabIndex = 8;
-            btnguardarcrédito.Text = "Guardar";
-            btnguardarcrédito.UseVisualStyleBackColor = false;
             // 
             // txtprecio
             // 
@@ -207,12 +183,46 @@
             txtproducto.Size = new Size(266, 27);
             txtproducto.TabIndex = 0;
             // 
+            // btneliminarcrédito
+            // 
+            btneliminarcrédito.BackColor = Color.IndianRed;
+            btneliminarcrédito.FlatStyle = FlatStyle.Popup;
+            btneliminarcrédito.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btneliminarcrédito.ForeColor = Color.White;
+            btneliminarcrédito.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btneliminarcrédito.IconColor = Color.White;
+            btneliminarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btneliminarcrédito.Location = new Point(89, 392);
+            btneliminarcrédito.Name = "btneliminarcrédito";
+            btneliminarcrédito.Size = new Size(94, 81);
+            btneliminarcrédito.TabIndex = 10;
+            btneliminarcrédito.Text = "Eliminar";
+            btneliminarcrédito.TextAlign = ContentAlignment.BottomCenter;
+            btneliminarcrédito.UseVisualStyleBackColor = false;
+            // 
+            // btnguardarcrédito
+            // 
+            btnguardarcrédito.BackColor = Color.ForestGreen;
+            btnguardarcrédito.FlatStyle = FlatStyle.Popup;
+            btnguardarcrédito.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnguardarcrédito.ForeColor = Color.White;
+            btnguardarcrédito.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnguardarcrédito.IconColor = Color.White;
+            btnguardarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnguardarcrédito.Location = new Point(189, 392);
+            btnguardarcrédito.Name = "btnguardarcrédito";
+            btnguardarcrédito.Size = new Size(94, 81);
+            btnguardarcrédito.TabIndex = 11;
+            btnguardarcrédito.Text = "Guardar";
+            btnguardarcrédito.TextAlign = ContentAlignment.BottomCenter;
+            btnguardarcrédito.UseVisualStyleBackColor = false;
+            // 
             // FormCrédito
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
-            ClientSize = new Size(1139, 586);
+            ClientSize = new Size(1282, 647);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label2);
@@ -243,9 +253,9 @@
         private TextBox txtclientecrédito;
         private TextBox txtprecio;
         private Label label5;
-        private Button btnborrarcrédito;
-        private Button btnguardarcrédito;
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton btneliminarcrédito;
+        private FontAwesome.Sharp.IconButton btnguardarcrédito;
     }
 }
