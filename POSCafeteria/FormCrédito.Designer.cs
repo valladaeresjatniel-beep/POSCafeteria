@@ -85,9 +85,9 @@
             panel1.Controls.Add(iconPictureBox1);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(dtvcrédito);
-            panel1.Location = new Point(310, 137);
+            panel1.Location = new Point(395, 137);
             panel1.Name = "panel1";
-            panel1.Size = new Size(970, 510);
+            panel1.Size = new Size(885, 586);
             panel1.TabIndex = 3;
             // 
             // iconPictureBox1
@@ -100,7 +100,7 @@
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox1.IconSize = 40;
             iconPictureBox1.InitialImage = null;
-            iconPictureBox1.Location = new Point(38, 11);
+            iconPictureBox1.Location = new Point(30, 13);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(40, 40);
             iconPictureBox1.TabIndex = 3;
@@ -110,7 +110,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(84, 17);
+            label6.Location = new Point(76, 19);
             label6.Name = "label6";
             label6.Size = new Size(198, 25);
             label6.TabIndex = 1;
@@ -120,10 +120,10 @@
             // 
             dtvcrédito.AllowUserToOrderColumns = true;
             dtvcrédito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtvcrédito.Location = new Point(-1, 74);
+            dtvcrédito.Location = new Point(3, 74);
             dtvcrédito.Name = "dtvcrédito";
             dtvcrédito.RowHeadersWidth = 51;
-            dtvcrédito.Size = new Size(966, 435);
+            dtvcrédito.Size = new Size(881, 507);
             dtvcrédito.TabIndex = 0;
             // 
             // panel2
@@ -139,14 +139,14 @@
             panel2.Controls.Add(label3);
             panel2.Location = new Point(3, 137);
             panel2.Name = "panel2";
-            panel2.Size = new Size(305, 510);
+            panel2.Size = new Size(390, 586);
             panel2.TabIndex = 4;
             // 
             // txtprecio
             // 
             txtprecio.Location = new Point(17, 240);
             txtprecio.Name = "txtprecio";
-            txtprecio.Size = new Size(266, 27);
+            txtprecio.Size = new Size(346, 27);
             txtprecio.TabIndex = 7;
             // 
             // label5
@@ -173,14 +173,14 @@
             // 
             txtclientecrédito.Location = new Point(17, 169);
             txtclientecrédito.Name = "txtclientecrédito";
-            txtclientecrédito.Size = new Size(266, 27);
+            txtclientecrédito.Size = new Size(346, 27);
             txtclientecrédito.TabIndex = 4;
             // 
             // txtproducto
             // 
             txtproducto.Location = new Point(17, 97);
             txtproducto.Name = "txtproducto";
-            txtproducto.Size = new Size(266, 27);
+            txtproducto.Size = new Size(346, 27);
             txtproducto.TabIndex = 0;
             // 
             // btneliminarcrédito
@@ -192,7 +192,7 @@
             btneliminarcrédito.IconChar = FontAwesome.Sharp.IconChar.Trash;
             btneliminarcrédito.IconColor = Color.White;
             btneliminarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btneliminarcrédito.Location = new Point(89, 392);
+            btneliminarcrédito.Location = new Point(139, 444);
             btneliminarcrédito.Name = "btneliminarcrédito";
             btneliminarcrédito.Size = new Size(94, 81);
             btneliminarcrédito.TabIndex = 10;
@@ -209,7 +209,7 @@
             btnguardarcrédito.IconChar = FontAwesome.Sharp.IconChar.Save;
             btnguardarcrédito.IconColor = Color.White;
             btnguardarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnguardarcrédito.Location = new Point(189, 392);
+            btnguardarcrédito.Location = new Point(269, 444);
             btnguardarcrédito.Name = "btnguardarcrédito";
             btnguardarcrédito.Size = new Size(94, 81);
             btnguardarcrédito.TabIndex = 11;
@@ -222,7 +222,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
-            ClientSize = new Size(1282, 647);
+            ClientSize = new Size(1282, 722);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label2);
