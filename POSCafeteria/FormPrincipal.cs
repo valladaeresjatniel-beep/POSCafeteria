@@ -39,7 +39,12 @@ namespace POSCafeteria
             // Cerrar la sesión actual y volver al formulario de inicio de sesión
             _frmlogin.Show();
             this.Close();
-            
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

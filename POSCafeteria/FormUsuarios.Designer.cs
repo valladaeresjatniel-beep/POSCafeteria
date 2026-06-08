@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             panel1 = new Panel();
             btnMenuPrincipal = new FontAwesome.Sharp.IconButton();
             btnEliminar = new FontAwesome.Sharp.IconButton();
             btnGuardar = new FontAwesome.Sharp.IconButton();
-            chkActivo = new CheckBox();
-            cmbRol = new ComboBox();
             label8 = new Label();
             txtClave = new TextBox();
             label7 = new Label();
@@ -52,7 +49,6 @@
             dgvUsuarios = new DataGridView();
             label9 = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -60,36 +56,26 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.Logo_Cafeteria1;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 120);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(138, 12);
+            label1.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(26, 9);
             label1.Name = "label1";
-            label1.Size = new Size(291, 41);
+            label1.Size = new Size(507, 36);
             label1.TabIndex = 1;
-            label1.Text = "Cafetería \"Aromas\"";
+            label1.Text = "Mueblería Expo Muebles Cruz";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(138, 90);
+            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(72, 108);
             label2.Name = "label2";
-            label2.Size = new Size(304, 32);
+            label2.Size = new Size(281, 25);
             label2.TabIndex = 2;
-            label2.Text = "Administración de Usuarios";
+            label2.Text = "Administración de Clientes";
             // 
             // panel1
             // 
@@ -97,8 +83,6 @@
             panel1.Controls.Add(btnMenuPrincipal);
             panel1.Controls.Add(btnEliminar);
             panel1.Controls.Add(btnGuardar);
-            panel1.Controls.Add(chkActivo);
-            panel1.Controls.Add(cmbRol);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(txtClave);
             panel1.Controls.Add(label7);
@@ -117,9 +101,9 @@
             // 
             // btnMenuPrincipal
             // 
-            btnMenuPrincipal.BackColor = Color.Brown;
+            btnMenuPrincipal.BackColor = Color.Firebrick;
             btnMenuPrincipal.FlatStyle = FlatStyle.Flat;
-            btnMenuPrincipal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnMenuPrincipal.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuPrincipal.ForeColor = Color.White;
             btnMenuPrincipal.IconChar = FontAwesome.Sharp.IconChar.ArrowRotateLeft;
             btnMenuPrincipal.IconColor = Color.White;
@@ -136,9 +120,9 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.BackColor = Color.DarkRed;
+            btnEliminar.BackColor = Color.IndianRed;
             btnEliminar.FlatStyle = FlatStyle.Flat;
-            btnEliminar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEliminar.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
             btnEliminar.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             btnEliminar.IconColor = Color.White;
@@ -155,9 +139,9 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = Color.Peru;
+            btnGuardar.BackColor = Color.Tan;
             btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnGuardar.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.ForeColor = Color.White;
             btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
             btnGuardar.IconColor = Color.White;
@@ -172,41 +156,20 @@
             btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // chkActivo
-            // 
-            chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(20, 413);
-            chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(127, 24);
-            chkActivo.TabIndex = 12;
-            chkActivo.Text = "Usuario Activo";
-            chkActivo.UseVisualStyleBackColor = true;
-            // 
-            // cmbRol
-            // 
-            cmbRol.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbRol.FlatStyle = FlatStyle.Flat;
-            cmbRol.FormattingEnabled = true;
-            cmbRol.Items.AddRange(new object[] { "Administrador", "Cajero", "Mesero" });
-            cmbRol.Location = new Point(20, 371);
-            cmbRol.Name = "cmbRol";
-            cmbRol.Size = new Size(351, 28);
-            cmbRol.TabIndex = 11;
-            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label8.Location = new Point(20, 348);
+            label8.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(20, 289);
             label8.Name = "label8";
-            label8.Size = new Size(36, 20);
+            label8.Size = new Size(166, 18);
             label8.TabIndex = 10;
-            label8.Text = "Rol:";
+            label8.Text = "Número Telefónico:";
             // 
             // txtClave
             // 
             txtClave.BorderStyle = BorderStyle.FixedSingle;
-            txtClave.Location = new Point(20, 313);
+            txtClave.Location = new Point(20, 243);
             txtClave.Name = "txtClave";
             txtClave.Size = new Size(351, 27);
             txtClave.TabIndex = 9;
@@ -215,17 +178,17 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label7.Location = new Point(20, 280);
+            label7.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(20, 209);
             label7.Name = "label7";
-            label7.Size = new Size(92, 20);
+            label7.Size = new Size(204, 18);
             label7.TabIndex = 8;
-            label7.Text = "Contraseña:";
+            label7.Text = "Cedúla de identificación:\r\n";
             // 
             // txtEmail
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(20, 244);
+            txtEmail.Location = new Point(20, 166);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(351, 27);
             txtEmail.TabIndex = 7;
@@ -233,17 +196,17 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label6.Location = new Point(20, 211);
+            label6.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(20, 143);
             label6.Name = "label6";
-            label6.Size = new Size(51, 20);
+            label6.Size = new Size(87, 18);
             label6.TabIndex = 6;
-            label6.Text = "Email:";
+            label6.Text = "Dirección:";
             // 
             // txtNombreCompleto
             // 
             txtNombreCompleto.BorderStyle = BorderStyle.FixedSingle;
-            txtNombreCompleto.Location = new Point(20, 176);
+            txtNombreCompleto.Location = new Point(20, 98);
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.Size = new Size(351, 27);
             txtNombreCompleto.TabIndex = 5;
@@ -254,14 +217,13 @@
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.Location = new Point(20, 143);
             label5.Name = "label5";
-            label5.Size = new Size(141, 20);
+            label5.Size = new Size(0, 20);
             label5.TabIndex = 4;
-            label5.Text = "Nombre completo:";
             // 
             // txtNombreUsuario
             // 
             txtNombreUsuario.BorderStyle = BorderStyle.FixedSingle;
-            txtNombreUsuario.Location = new Point(20, 108);
+            txtNombreUsuario.Location = new Point(20, 312);
             txtNombreUsuario.Name = "txtNombreUsuario";
             txtNombreUsuario.Size = new Size(351, 27);
             txtNombreUsuario.TabIndex = 3;
@@ -269,12 +231,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(20, 75);
             label4.Name = "label4";
-            label4.Size = new Size(67, 20);
+            label4.Size = new Size(162, 18);
             label4.TabIndex = 2;
-            label4.Text = "Usuario:";
+            label4.Text = "Nombre Completo:\r\n";
             // 
             // label3
             // 
@@ -282,19 +244,19 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label3.Location = new Point(59, 13);
             label3.Name = "label3";
-            label3.Size = new Size(246, 28);
+            label3.Size = new Size(0, 28);
             label3.TabIndex = 1;
-            label3.Text = "Agregar o Editar Usuario";
             // 
             // iconPictureBox1
             // 
-            iconPictureBox1.BackColor = Color.Linen;
+            iconPictureBox1.BackColor = Color.AntiqueWhite;
+            iconPictureBox1.BorderStyle = BorderStyle.Fixed3D;
             iconPictureBox1.ForeColor = SystemColors.ControlText;
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
             iconPictureBox1.IconColor = SystemColors.ControlText;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox1.IconSize = 40;
-            iconPictureBox1.Location = new Point(13, 13);
+            iconPictureBox1.Location = new Point(13, 14);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(40, 40);
             iconPictureBox1.TabIndex = 0;
@@ -328,16 +290,17 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label9.Location = new Point(58, 14);
+            label9.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(58, 22);
             label9.Name = "label9";
-            label9.Size = new Size(172, 28);
+            label9.Size = new Size(196, 25);
             label9.TabIndex = 16;
-            label9.Text = "Lista de Usuarios";
+            label9.Text = "Lista de Clientes";
             // 
             // iconPictureBox2
             // 
             iconPictureBox2.BackColor = Color.Linen;
+            iconPictureBox2.BorderStyle = BorderStyle.Fixed3D;
             iconPictureBox2.ForeColor = SystemColors.ControlText;
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Users;
             iconPictureBox2.IconColor = SystemColors.ControlText;
@@ -353,17 +316,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Linen;
+            BackColor = Color.AntiqueWhite;
             ClientSize = new Size(1302, 732);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(pictureBox1);
             Name = "FormUsuarios";
             Text = "FormUsuarios";
             Load += FormUsuarios_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
@@ -376,8 +337,6 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
         private Panel panel1;
@@ -391,9 +350,7 @@
         private Label label6;
         private TextBox txtNombreCompleto;
         private Label label5;
-        private ComboBox cmbRol;
         private Label label8;
-        private CheckBox chkActivo;
         private FontAwesome.Sharp.IconButton btnGuardar;
         private FontAwesome.Sharp.IconButton btnEliminar;
         private Panel panel2;

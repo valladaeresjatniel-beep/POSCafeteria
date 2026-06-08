@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             lblBienvenido = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label3 = new Label();
@@ -40,9 +40,11 @@
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             lblFecha = new Label();
             label8 = new Label();
-            btnMenuUsuarios = new Button();
             btnCerrarSesion = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            button2 = new Button();
+            button3 = new Button();
+            button1 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
@@ -51,34 +53,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(138, 12);
+            label1.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(291, 41);
+            label1.Size = new Size(507, 36);
             label1.TabIndex = 3;
-            label1.Text = "Cafetería \"Aromas\"";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.Logo_Cafeteria1;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 120);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            label1.Text = "Mueblería Expo Muebles Cruz";
+            label1.UseWaitCursor = true;
+            label1.Click += label1_Click;
             // 
             // lblBienvenido
             // 
             lblBienvenido.AutoSize = true;
             lblBienvenido.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblBienvenido.ForeColor = Color.Black;
-            lblBienvenido.Location = new Point(138, 70);
+            lblBienvenido.Location = new Point(142, 64);
             lblBienvenido.Name = "lblBienvenido";
             lblBienvenido.Size = new Size(163, 28);
             lblBienvenido.TabIndex = 4;
             lblBienvenido.Text = "¡Bienvenido(a) !";
+            lblBienvenido.UseWaitCursor = true;
             // 
             // iconPictureBox1
             // 
@@ -93,6 +88,7 @@
             iconPictureBox1.Size = new Size(30, 30);
             iconPictureBox1.TabIndex = 5;
             iconPictureBox1.TabStop = false;
+            iconPictureBox1.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -103,6 +99,7 @@
             label3.Size = new Size(67, 20);
             label3.TabIndex = 6;
             label3.Text = "Usuario:";
+            label3.UseWaitCursor = true;
             // 
             // lblUsuario
             // 
@@ -112,6 +109,7 @@
             lblUsuario.Size = new Size(38, 20);
             lblUsuario.TabIndex = 7;
             lblUsuario.Text = "User";
+            lblUsuario.UseWaitCursor = true;
             // 
             // iconPictureBox2
             // 
@@ -126,6 +124,7 @@
             iconPictureBox2.Size = new Size(30, 30);
             iconPictureBox2.TabIndex = 8;
             iconPictureBox2.TabStop = false;
+            iconPictureBox2.UseWaitCursor = true;
             // 
             // lblRol
             // 
@@ -135,6 +134,7 @@
             lblRol.Size = new Size(104, 20);
             lblRol.TabIndex = 10;
             lblRol.Text = "Administrador";
+            lblRol.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -145,6 +145,7 @@
             label6.Size = new Size(36, 20);
             label6.TabIndex = 9;
             label6.Text = "Rol:";
+            label6.UseWaitCursor = true;
             // 
             // iconPictureBox3
             // 
@@ -159,6 +160,7 @@
             iconPictureBox3.Size = new Size(30, 30);
             iconPictureBox3.TabIndex = 11;
             iconPictureBox3.TabStop = false;
+            iconPictureBox3.UseWaitCursor = true;
             // 
             // lblFecha
             // 
@@ -168,6 +170,7 @@
             lblFecha.Size = new Size(77, 20);
             lblFecha.TabIndex = 13;
             lblFecha.Text = "29/5/2026";
+            lblFecha.UseWaitCursor = true;
             // 
             // label8
             // 
@@ -178,23 +181,7 @@
             label8.Size = new Size(53, 20);
             label8.TabIndex = 12;
             label8.Text = "Fecha:";
-            // 
-            // btnMenuUsuarios
-            // 
-            btnMenuUsuarios.BackColor = Color.Linen;
-            btnMenuUsuarios.FlatStyle = FlatStyle.Flat;
-            btnMenuUsuarios.Font = new Font("Segoe UI", 18F);
-            btnMenuUsuarios.Image = Properties.Resources.Icono_Usuarios;
-            btnMenuUsuarios.ImageAlign = ContentAlignment.TopLeft;
-            btnMenuUsuarios.Location = new Point(12, 179);
-            btnMenuUsuarios.Name = "btnMenuUsuarios";
-            btnMenuUsuarios.Size = new Size(162, 195);
-            btnMenuUsuarios.TabIndex = 14;
-            btnMenuUsuarios.Text = "Usuarios";
-            btnMenuUsuarios.TextAlign = ContentAlignment.BottomCenter;
-            btnMenuUsuarios.TextImageRelation = TextImageRelation.ImageAboveText;
-            btnMenuUsuarios.UseVisualStyleBackColor = false;
-            btnMenuUsuarios.Click += btnMenuUsuarios_Click;
+            label8.UseWaitCursor = true;
             // 
             // btnCerrarSesion
             // 
@@ -206,23 +193,80 @@
             btnCerrarSesion.IconColor = Color.White;
             btnCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCerrarSesion.ImageAlign = ContentAlignment.MiddleRight;
-            btnCerrarSesion.Location = new Point(990, 12);
+            btnCerrarSesion.Location = new Point(1101, 25);
             btnCerrarSesion.Name = "btnCerrarSesion";
-            btnCerrarSesion.Size = new Size(172, 48);
+            btnCerrarSesion.Size = new Size(119, 45);
             btnCerrarSesion.TabIndex = 15;
             btnCerrarSesion.Text = "Cerrar Sesión";
             btnCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
             btnCerrarSesion.UseVisualStyleBackColor = false;
+            btnCerrarSesion.UseWaitCursor = true;
             btnCerrarSesion.Click += btnCerrarSesion_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(684, 14);
+            button2.Name = "button2";
+            button2.Size = new Size(129, 38);
+            button2.TabIndex = 17;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.UseWaitCursor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(824, 9);
+            button3.Name = "button3";
+            button3.Size = new Size(140, 45);
+            button3.TabIndex = 18;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.AntiqueWhite;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Zoom;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(33, 143);
+            button1.Name = "button1";
+            button1.Size = new Size(130, 117);
+            button1.TabIndex = 19;
+            button1.Text = "Cliente";
+            button1.TextAlign = ContentAlignment.BottomCenter;
+            button1.UseVisualStyleBackColor = false;
+            button1.UseWaitCursor = true;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.AntiqueWhite;
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.Zoom;
+            button4.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(30, 282);
+            button4.Name = "button4";
+            button4.Size = new Size(133, 108);
+            button4.TabIndex = 20;
+            button4.Text = "Crédito";
+            button4.UseVisualStyleBackColor = false;
+            button4.UseWaitCursor = true;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Linen;
-            ClientSize = new Size(1174, 696);
+            BackColor = Color.AntiqueWhite;
+            ClientSize = new Size(1276, 696);
+            Controls.Add(button4);
+            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(btnCerrarSesion);
-            Controls.Add(btnMenuUsuarios);
             Controls.Add(lblFecha);
             Controls.Add(label8);
             Controls.Add(iconPictureBox3);
@@ -234,11 +278,10 @@
             Controls.Add(iconPictureBox1);
             Controls.Add(lblBienvenido);
             Controls.Add(label1);
-            Controls.Add(pictureBox1);
             Name = "FormPrincipal";
             Text = "FormPrincipal";
+            UseWaitCursor = true;
             Load += FormPrincipal_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
@@ -249,7 +292,6 @@
         #endregion
 
         private Label label1;
-        private PictureBox pictureBox1;
         private Label lblBienvenido;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label3;
@@ -260,7 +302,10 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Label lblFecha;
         private Label label8;
-        private Button btnMenuUsuarios;
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
+        private Button button2;
+        private Button button3;
+        private Button button1;
+        private Button button4;
     }
 }
