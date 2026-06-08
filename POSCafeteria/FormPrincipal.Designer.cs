@@ -232,7 +232,7 @@
             button1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(33, 143);
+            button1.Location = new Point(33, 144);
             button1.Name = "button1";
             button1.Size = new Size(130, 117);
             button1.TabIndex = 19;

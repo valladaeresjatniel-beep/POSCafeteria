@@ -14,6 +14,7 @@ namespace POSCafeteria
             //nsnnssnn
             //jdjsjdd
             //dsdsd
+            //sjsjnjajs
             Application.Run(new FrmLogin());
         }
     }

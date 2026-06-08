@@ -147,7 +147,7 @@
             btnborrarcrédito.BackColor = Color.IndianRed;
             btnborrarcrédito.FlatStyle = FlatStyle.Popup;
             btnborrarcrédito.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnborrarcrédito.Location = new Point(30, 331);
+            btnborrarcrédito.Location = new Point(17, 331);
             btnborrarcrédito.Name = "btnborrarcrédito";
             btnborrarcrédito.Size = new Size(99, 43);
             btnborrarcrédito.TabIndex = 9;
