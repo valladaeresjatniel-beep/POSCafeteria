@@ -13,7 +13,7 @@ namespace POSCafeteria.DAL
             Usuario? usuarioAutenticado = null;
             using (SqlConnection conexion = ConexionDB.ObtenerConexion())
             {
-                string query = @"SELECT IdUsuario, NombreUsuario, NombreCompleto, Clave, Email, Rol, Activo, FechaCreacion FROM Usuario WHERE NombreUsuario = @NombreUsuario AND Clave = @Clave AND Activo = 1";
+                string query = @"SELECT IdUsuario, NombreUsuario, NombreCompleto, Clave FROM Usuario WHERE NombreUsuario = @NombreUsuario AND Clave = @Clave";
 
                 SqlCommand cmd = new SqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
@@ -31,11 +31,7 @@ namespace POSCafeteria.DAL
                                 IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
                                 NombreUsuario = reader["NombreUsuario"].ToString()!,
                                 NombreCompleto = reader["NombreCompleto"].ToString()!,
-                                Clave = reader["Clave"].ToString()!,
-                                Email = reader["Email"].ToString()!,
-                                Rol = reader["Rol"].ToString()!,
-                                Activo = Convert.ToBoolean(reader["Activo"]),
-                                FechaCreacion = Convert.ToDateTime(reader["FechaCreacion"])
+                                Clave = reader["Clave"].ToString()!
                             };
                         }
                     }
@@ -55,7 +51,7 @@ namespace POSCafeteria.DAL
 
             using (SqlConnection conexion = ConexionDB.ObtenerConexion())
             {
-                string query = @"SELECT IdUsuario, NombreUsuario, NombreCompleto, Clave, Email, Rol, Activo, FechaCreacion FROM Usuario";
+                string query = @"SELECT IdUsuario, NombreUsuario, NombreCompleto, Clave FROM Usuario";
 
                 SqlCommand cmd = new SqlCommand(query, conexion);
 
@@ -71,11 +67,7 @@ namespace POSCafeteria.DAL
                                 IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
                                 NombreUsuario = reader["NombreUsuario"].ToString()!,
                                 NombreCompleto = reader["NombreCompleto"].ToString()!,
-                                Clave = reader["Clave"].ToString()!,
-                                Email = reader["Email"].ToString()!,
-                                Rol = reader["Rol"].ToString()!,
-                                Activo = Convert.ToBoolean(reader["Activo"]),
-                                FechaCreacion = Convert.ToDateTime(reader["FechaCreacion"])
+                                Clave = reader["Clave"].ToString()!
                             });
                         }
                     }
@@ -93,15 +85,12 @@ namespace POSCafeteria.DAL
         {
             using (SqlConnection conexion = ConexionDB.ObtenerConexion())
             {
-                string query = @"INSERT INTO Usuario (NombreUsuario, NombreCompleto, Clave, Email, Rol, Activo, FechaCreacion) VALUES (@NombreUsuario, @NombreCompleto, @Clave, @Email, @Rol, @Activo, GETDATE())";
+                string query = @"INSERT INTO Usuario (NombreUsuario, NombreCompleto, Clave) VALUES (@NombreUsuario, @NombreCompleto, @Clave)";
 
                 SqlCommand cmd = new SqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@NombreUsuario", obj.NombreUsuario);
                 cmd.Parameters.AddWithValue("@NombreCompleto", obj.NombreCompleto);
                 cmd.Parameters.AddWithValue("@Clave", obj.Clave);
-                cmd.Parameters.AddWithValue("@Email", obj.Email);
-                cmd.Parameters.AddWithValue("@Rol", obj.Rol);
-                cmd.Parameters.AddWithValue("@Activo", obj.Activo);
 
                 try
                 {
@@ -121,16 +110,13 @@ namespace POSCafeteria.DAL
         {
             using (SqlConnection conexion= ConexionDB.ObtenerConexion())
             {
-                string query = @"UPDATE Usuario SET NombreUsuario = @NombreUsuario, NombreCompleto = @NombreCompleto, Clave = @Clave, Email = @Email, Rol = @Rol, Activo = @Activo WHERE IdUsuario = @IdUsuario";
+                string query = @"UPDATE Usuario SET NombreUsuario = @NombreUsuario, NombreCompleto = @NombreCompleto, Clave = @Clave WHERE IdUsuario = @IdUsuario";
 
                 SqlCommand cmd = new SqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@IdUsuario", obj.IdUsuario);
                 cmd.Parameters.AddWithValue("@NombreUsuario", obj.NombreUsuario);
                 cmd.Parameters.AddWithValue("@NombreCompleto", obj.NombreCompleto);
                 cmd.Parameters.AddWithValue("@Clave", obj.Clave);
-                cmd.Parameters.AddWithValue("@Email", obj.Email);
-                cmd.Parameters.AddWithValue("@Rol", obj.Rol);
-                cmd.Parameters.AddWithValue("@Activo", obj.Activo);
 
                 try
                 {
@@ -150,7 +136,7 @@ namespace POSCafeteria.DAL
         {
             using (SqlConnection conexion = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE Usuario SET Activo = 0 WHERE IdUsuario = @IdUsuario";
+                string query = "DELETE FROM Usuario WHERE IdUsuario = @IdUsuario";
 
                 SqlCommand cmd = new SqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);

@@ -60,7 +60,7 @@ namespace POSCafeteria
             txtEmail.Clear();
             txtClave.Clear();
             // cmbRol.SelectedIndex = -1;
-           // chkActivo.Checked = true;
+            // chkActivo.Checked = true;
 
             // Regresar el foco al primer campo
             txtNombreUsuario.Focus();
@@ -76,9 +76,9 @@ namespace POSCafeteria
                     NombreUsuario = txtNombreUsuario.Text,
                     NombreCompleto = txtNombreCompleto.Text,
                     Clave = txtClave.Text,
-                    Email = txtEmail.Text,
-                   // Rol = cmbRol.Text,
-                   // Activo = chkActivo.Checked
+                    // Email = txtEmail.Text,
+                    // Rol = cmbRol.Text,
+                    // Activo = chkActivo.Checked
                 };
                 bool exito = _usuarioBLL.GuardarUsuario(nuevoUsuario);
 
@@ -107,8 +107,8 @@ namespace POSCafeteria
                 txtNombreCompleto.Text = fila.Cells["NombreCompleto"].Value.ToString();
                 txtClave.Text = fila.Cells["Clave"].Value.ToString();
                 txtEmail.Text = fila.Cells["Email"].Value.ToString();
-               // cmbRol.Text = fila.Cells["Rol"].Value.ToString();
-               // chkActivo.Checked = Convert.ToBoolean(fila.Cells["Activo"].Value);
+                // cmbRol.Text = fila.Cells["Rol"].Value.ToString();
+                // chkActivo.Checked = Convert.ToBoolean(fila.Cells["Activo"].Value);
             }
         }
 
@@ -153,7 +153,12 @@ namespace POSCafeteria
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

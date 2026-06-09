@@ -27,9 +27,9 @@ namespace POSCafeteria.BLL
         public bool GuardarUsuario(Usuario obj)
         {
             // Validaciones básicas
-            if (string.IsNullOrWhiteSpace(obj.NombreUsuario) || string.IsNullOrWhiteSpace(obj.Clave) || string.IsNullOrWhiteSpace(obj.Rol) || string.IsNullOrWhiteSpace(obj.NombreCompleto))
+            if (string.IsNullOrWhiteSpace(obj.NombreUsuario) || string.IsNullOrWhiteSpace(obj.Clave) || string.IsNullOrWhiteSpace(obj.NombreCompleto))
             {
-                throw new ArgumentException("El Nombre de Usuario, el Nombre Completo, la Contraseña y el Rol son obligatorios.");
+                throw new ArgumentException("El Nombre de Usuario, el Nombre Completo y la Contraseña son obligatorios");
             }
 
             if (obj.IdUsuario == 0)

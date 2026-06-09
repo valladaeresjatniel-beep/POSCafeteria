@@ -24,7 +24,7 @@ namespace POSCafeteria
         {
             lblBienvenido.Text = $"¡Bienvenido(a), {_usuarioSesion.NombreCompleto}!";
             lblUsuario.Text = _usuarioSesion.NombreUsuario;
-            lblRol.Text = _usuarioSesion.Rol;
+            lblRol.Text = "";
             lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 

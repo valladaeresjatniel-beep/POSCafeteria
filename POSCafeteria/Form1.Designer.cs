@@ -91,6 +91,7 @@
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(212, 34);
             txtUsuario.TabIndex = 6;
+            txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // txtClave
             // 
