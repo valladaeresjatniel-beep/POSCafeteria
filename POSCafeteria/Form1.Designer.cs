@@ -107,7 +107,7 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.BackColor = Color.BurlyWood;
+            btnIngresar.BackColor = Color.ForestGreen;
             btnIngresar.FlatStyle = FlatStyle.Flat;
             btnIngresar.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnIngresar.ForeColor = Color.White;
@@ -142,7 +142,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.FloralWhite;
+            groupBox1.BackColor = Color.OldLace;
             groupBox1.Controls.Add(txtUsuario);
             groupBox1.Controls.Add(btnSalir);
             groupBox1.Controls.Add(txtClave);
