@@ -247,6 +247,7 @@
             btnAbonoprincipal.Text = "Abono";
             btnAbonoprincipal.UseVisualStyleBackColor = false;
             btnAbonoprincipal.UseWaitCursor = true;
+            btnAbonoprincipal.Click += btnAbonoprincipal_Click;
             // 
             // btnProductoprincipal
             // 

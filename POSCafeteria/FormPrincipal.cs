@@ -49,25 +49,36 @@ namespace POSCafeteria
         private void btnVentasprincipal_Click(object sender, EventArgs e)
         {
             FormCrédito frmCrédito = new FormCrédito();
+            this.Hide();
             frmCrédito.Show();
         }
 
         private void btnClientesprincipal_Click(object sender, EventArgs e)
         {
             FormClientes frmClientes = new FormClientes();
+            this.Hide();
             frmClientes.Show();
         }
 
         private void btnProductoprincipal_Click(object sender, EventArgs e)
         {
             FormProductos frmProductos = new FormProductos();
+            this.Hide();
             frmProductos.Show();
         }
 
         private void btnUsuarioprincipal_Click(object sender, EventArgs e)
         {
             FormUser frmUser = new FormUser();
+            this.Hide();
             frmUser.Show();
+        }
+
+        private void btnAbonoprincipal_Click(object sender, EventArgs e)
+        {
+            FormAbono formAbono = new FormAbono();
+            this.Hide();
+            formAbono.Show();
         }
     }
 }
