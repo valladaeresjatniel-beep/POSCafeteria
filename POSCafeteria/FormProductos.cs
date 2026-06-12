@@ -8,21 +8,11 @@ using System.Windows.Forms;
 
 namespace POSCafeteria
 {
-    public partial class FormUser : Form
+    public partial class FormProductos : Form
     {
-        public FormUser()
+        public FormProductos()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

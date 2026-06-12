@@ -7,7 +7,8 @@ namespace POSCafeteria.DAL
 {
     public static class ConexionDB
     {
-        public static string CadenaConexion = "Server=PSYCHOPOMP;Database=VentasCreditoDB;Trusted_Connection=True;TrustServerCertificate=True;";
+        private const string CadenaConexionBase = "Server=LAPTOP-HLMON4R3;Database=VentasCreditoDB;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static string CadenaConexion = CadenaConexionBase;
         public static SqlConnection ObtenerConexion()
         {
             return new SqlConnection(CadenaConexion);

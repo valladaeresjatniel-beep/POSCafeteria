@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,10 @@ namespace POSCafeteria
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }

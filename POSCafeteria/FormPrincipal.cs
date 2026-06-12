@@ -20,18 +20,17 @@ namespace POSCafeteria
             this._frmlogin = frmlogin;
         }
 
+
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             lblBienvenido.Text = $"¡Bienvenido(a), {_usuarioSesion.NombreCompleto}!";
             lblUsuario.Text = _usuarioSesion.NombreUsuario;
-            lblRol.Text = "";
+            //lblRol.Text = "";
             lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btnMenuUsuarios_Click(object sender, EventArgs e)
         {
-            FormUsuarios frmUsuarios = new FormUsuarios(_usuarioSesion);
-            frmUsuarios.ShowDialog();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -45,6 +44,30 @@ namespace POSCafeteria
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVentasprincipal_Click(object sender, EventArgs e)
+        {
+            FormCrédito frmCrédito = new FormCrédito();
+            frmCrédito.Show();
+        }
+
+        private void btnClientesprincipal_Click(object sender, EventArgs e)
+        {
+            FormClientes frmClientes = new FormClientes();
+            frmClientes.Show();
+        }
+
+        private void btnProductoprincipal_Click(object sender, EventArgs e)
+        {
+            FormProductos frmProductos = new FormProductos();
+            frmProductos.Show();
+        }
+
+        private void btnUsuarioprincipal_Click(object sender, EventArgs e)
+        {
+            FormUser frmUser = new FormUser();
+            frmUser.Show();
         }
     }
 }

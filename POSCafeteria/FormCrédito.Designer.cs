@@ -36,13 +36,15 @@
             label6 = new Label();
             dtvcrédito = new DataGridView();
             panel2 = new Panel();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            btnguardarcrédito = new FontAwesome.Sharp.IconButton();
+            btneliminarcrédito = new FontAwesome.Sharp.IconButton();
             txtprecio = new TextBox();
             label5 = new Label();
             label4 = new Label();
-            txtclientecrédito = new TextBox();
-            txtproducto = new TextBox();
-            btneliminarcrédito = new FontAwesome.Sharp.IconButton();
-            btnguardarcrédito = new FontAwesome.Sharp.IconButton();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtvcrédito).BeginInit();
@@ -63,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(143, 88);
+            label2.Location = new Point(45, 19);
             label2.Name = "label2";
             label2.Size = new Size(279, 25);
             label2.TabIndex = 1;
@@ -73,7 +75,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(17, 74);
+            label3.Location = new Point(17, 86);
             label3.Name = "label3";
             label3.Size = new Size(95, 20);
             label3.TabIndex = 2;
@@ -85,15 +87,14 @@
             panel1.Controls.Add(iconPictureBox1);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(dtvcrédito);
-            panel1.Location = new Point(395, 137);
+            panel1.Location = new Point(395, 85);
             panel1.Name = "panel1";
-            panel1.Size = new Size(885, 586);
+            panel1.Size = new Size(885, 638);
             panel1.TabIndex = 3;
             // 
             // iconPictureBox1
             // 
-            iconPictureBox1.BackColor = Color.Linen;
-            iconPictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            iconPictureBox1.BackColor = Color.AntiqueWhite;
             iconPictureBox1.ForeColor = SystemColors.ControlText;
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CreditCard;
             iconPictureBox1.IconColor = SystemColors.ControlText;
@@ -119,32 +120,103 @@
             // dtvcrédito
             // 
             dtvcrédito.AllowUserToOrderColumns = true;
+            dtvcrédito.BackgroundColor = Color.SeaShell;
             dtvcrédito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtvcrédito.Location = new Point(3, 74);
             dtvcrédito.Name = "dtvcrédito";
             dtvcrédito.RowHeadersWidth = 51;
-            dtvcrédito.Size = new Size(881, 507);
+            dtvcrédito.Size = new Size(881, 465);
             dtvcrédito.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(comboBox2);
+            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(iconButton1);
             panel2.Controls.Add(btnguardarcrédito);
+            panel2.Controls.Add(label2);
             panel2.Controls.Add(btneliminarcrédito);
             panel2.Controls.Add(txtprecio);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(txtclientecrédito);
-            panel2.Controls.Add(txtproducto);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(3, 137);
+            panel2.Location = new Point(3, 85);
             panel2.Name = "panel2";
-            panel2.Size = new Size(390, 586);
+            panel2.Size = new Size(390, 638);
             panel2.TabIndex = 4;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(18, 175);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(343, 28);
+            comboBox2.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(20, 109);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(343, 28);
+            comboBox1.TabIndex = 13;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.LightCoral;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(17, 436);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(94, 81);
+            iconButton1.TabIndex = 12;
+            iconButton1.Text = "Volver";
+            iconButton1.TextAlign = ContentAlignment.BottomCenter;
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click_1;
+            // 
+            // btnguardarcrédito
+            // 
+            btnguardarcrédito.BackColor = Color.ForestGreen;
+            btnguardarcrédito.FlatStyle = FlatStyle.Flat;
+            btnguardarcrédito.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnguardarcrédito.ForeColor = Color.White;
+            btnguardarcrédito.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnguardarcrédito.IconColor = Color.White;
+            btnguardarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnguardarcrédito.Location = new Point(270, 436);
+            btnguardarcrédito.Name = "btnguardarcrédito";
+            btnguardarcrédito.Size = new Size(94, 81);
+            btnguardarcrédito.TabIndex = 11;
+            btnguardarcrédito.Text = "Guardar";
+            btnguardarcrédito.TextAlign = ContentAlignment.BottomCenter;
+            btnguardarcrédito.UseVisualStyleBackColor = false;
+            // 
+            // btneliminarcrédito
+            // 
+            btneliminarcrédito.BackColor = Color.Firebrick;
+            btneliminarcrédito.FlatStyle = FlatStyle.Flat;
+            btneliminarcrédito.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btneliminarcrédito.ForeColor = Color.White;
+            btneliminarcrédito.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btneliminarcrédito.IconColor = Color.White;
+            btneliminarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btneliminarcrédito.Location = new Point(141, 436);
+            btneliminarcrédito.Name = "btneliminarcrédito";
+            btneliminarcrédito.Size = new Size(94, 81);
+            btneliminarcrédito.TabIndex = 10;
+            btneliminarcrédito.Text = "Eliminar";
+            btneliminarcrédito.TextAlign = ContentAlignment.BottomCenter;
+            btneliminarcrédito.UseVisualStyleBackColor = false;
             // 
             // txtprecio
             // 
-            txtprecio.Location = new Point(17, 240);
+            txtprecio.Location = new Point(17, 246);
             txtprecio.Name = "txtprecio";
             txtprecio.Size = new Size(346, 27);
             txtprecio.TabIndex = 7;
@@ -153,7 +225,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(17, 217);
+            label5.Location = new Point(20, 223);
             label5.Name = "label5";
             label5.Size = new Size(68, 20);
             label5.TabIndex = 6;
@@ -163,70 +235,30 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(17, 146);
+            label4.Location = new Point(17, 152);
             label4.Name = "label4";
             label4.Size = new Size(75, 20);
             label4.TabIndex = 5;
             label4.Text = "Cliente\r\n";
             // 
-            // txtclientecrédito
+            // panel3
             // 
-            txtclientecrédito.Location = new Point(17, 169);
-            txtclientecrédito.Name = "txtclientecrédito";
-            txtclientecrédito.Size = new Size(346, 27);
-            txtclientecrédito.TabIndex = 4;
-            // 
-            // txtproducto
-            // 
-            txtproducto.Location = new Point(17, 97);
-            txtproducto.Name = "txtproducto";
-            txtproducto.Size = new Size(346, 27);
-            txtproducto.TabIndex = 0;
-            // 
-            // btneliminarcrédito
-            // 
-            btneliminarcrédito.BackColor = Color.IndianRed;
-            btneliminarcrédito.FlatStyle = FlatStyle.Popup;
-            btneliminarcrédito.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btneliminarcrédito.ForeColor = Color.White;
-            btneliminarcrédito.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            btneliminarcrédito.IconColor = Color.White;
-            btneliminarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btneliminarcrédito.Location = new Point(139, 444);
-            btneliminarcrédito.Name = "btneliminarcrédito";
-            btneliminarcrédito.Size = new Size(94, 81);
-            btneliminarcrédito.TabIndex = 10;
-            btneliminarcrédito.Text = "Eliminar";
-            btneliminarcrédito.TextAlign = ContentAlignment.BottomCenter;
-            btneliminarcrédito.UseVisualStyleBackColor = false;
-            // 
-            // btnguardarcrédito
-            // 
-            btnguardarcrédito.BackColor = Color.ForestGreen;
-            btnguardarcrédito.FlatStyle = FlatStyle.Popup;
-            btnguardarcrédito.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnguardarcrédito.ForeColor = Color.White;
-            btnguardarcrédito.IconChar = FontAwesome.Sharp.IconChar.Save;
-            btnguardarcrédito.IconColor = Color.White;
-            btnguardarcrédito.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnguardarcrédito.Location = new Point(269, 444);
-            btnguardarcrédito.Name = "btnguardarcrédito";
-            btnguardarcrédito.Size = new Size(94, 81);
-            btnguardarcrédito.TabIndex = 11;
-            btnguardarcrédito.Text = "Guardar";
-            btnguardarcrédito.TextAlign = ContentAlignment.BottomCenter;
-            btnguardarcrédito.UseVisualStyleBackColor = false;
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Location = new Point(3, 6);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1277, 81);
+            panel3.TabIndex = 5;
             // 
             // FormCrédito
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
-            ClientSize = new Size(1282, 722);
+            ClientSize = new Size(1282, 631);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(panel3);
             Name = "FormCrédito";
             Text = "FormCrédito";
             Load += FormCrédito_Load;
@@ -248,14 +280,16 @@
         private Panel panel1;
         private DataGridView dtvcrédito;
         private Panel panel2;
-        private TextBox txtproducto;
         private Label label4;
-        private TextBox txtclientecrédito;
         private TextBox txtprecio;
         private Label label5;
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton btneliminarcrédito;
         private FontAwesome.Sharp.IconButton btnguardarcrédito;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private Panel panel3;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
     }
 }
