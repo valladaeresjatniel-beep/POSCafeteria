@@ -28,75 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
+            btnguardarAbono = new FontAwesome.Sharp.IconButton();
+            btneliminarAbono = new FontAwesome.Sharp.IconButton();
+            btnvolverAbono = new FontAwesome.Sharp.IconButton();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
+            cmbcréditoabono = new ComboBox();
+            txtmontoabono = new TextBox();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtvabono = new DataGridView();
             panel2 = new Panel();
             panel3 = new Panel();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtvabono).BeginInit();
             SuspendLayout();
             // 
-            // iconButton1
+            // btnguardarAbono
             // 
-            iconButton1.BackColor = Color.ForestGreen;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(261, 495);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(94, 81);
-            iconButton1.TabIndex = 0;
-            iconButton1.Text = "Guardar";
-            iconButton1.TextAlign = ContentAlignment.BottomCenter;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnguardarAbono.BackColor = Color.ForestGreen;
+            btnguardarAbono.FlatStyle = FlatStyle.Flat;
+            btnguardarAbono.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
+            btnguardarAbono.ForeColor = Color.White;
+            btnguardarAbono.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnguardarAbono.IconColor = Color.White;
+            btnguardarAbono.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnguardarAbono.Location = new Point(261, 495);
+            btnguardarAbono.Name = "btnguardarAbono";
+            btnguardarAbono.Size = new Size(94, 81);
+            btnguardarAbono.TabIndex = 0;
+            btnguardarAbono.Text = "Guardar";
+            btnguardarAbono.TextAlign = ContentAlignment.BottomCenter;
+            btnguardarAbono.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btneliminarAbono
             // 
-            iconButton2.BackColor = Color.Firebrick;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(148, 495);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(94, 81);
-            iconButton2.TabIndex = 1;
-            iconButton2.Text = "Eliminar";
-            iconButton2.TextAlign = ContentAlignment.BottomCenter;
-            iconButton2.UseVisualStyleBackColor = false;
+            btneliminarAbono.BackColor = Color.Firebrick;
+            btneliminarAbono.FlatStyle = FlatStyle.Flat;
+            btneliminarAbono.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
+            btneliminarAbono.ForeColor = Color.White;
+            btneliminarAbono.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btneliminarAbono.IconColor = Color.White;
+            btneliminarAbono.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btneliminarAbono.Location = new Point(148, 495);
+            btneliminarAbono.Name = "btneliminarAbono";
+            btneliminarAbono.Size = new Size(94, 81);
+            btneliminarAbono.TabIndex = 1;
+            btneliminarAbono.Text = "Eliminar";
+            btneliminarAbono.TextAlign = ContentAlignment.BottomCenter;
+            btneliminarAbono.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btnvolverAbono
             // 
-            iconButton3.BackColor = Color.LightCoral;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(31, 495);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(94, 81);
-            iconButton3.TabIndex = 2;
-            iconButton3.Text = "Volver";
-            iconButton3.TextAlign = ContentAlignment.BottomCenter;
-            iconButton3.UseVisualStyleBackColor = false;
+            btnvolverAbono.BackColor = Color.LightCoral;
+            btnvolverAbono.FlatStyle = FlatStyle.Flat;
+            btnvolverAbono.Font = new Font("Verdana", 7.8F, FontStyle.Bold);
+            btnvolverAbono.ForeColor = Color.White;
+            btnvolverAbono.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            btnvolverAbono.IconColor = Color.White;
+            btnvolverAbono.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnvolverAbono.Location = new Point(31, 495);
+            btnvolverAbono.Name = "btnvolverAbono";
+            btnvolverAbono.Size = new Size(94, 81);
+            btnvolverAbono.TabIndex = 2;
+            btnvolverAbono.Text = "Volver";
+            btnvolverAbono.TextAlign = ContentAlignment.BottomCenter;
+            btnvolverAbono.UseVisualStyleBackColor = false;
             // 
             // iconPictureBox1
             // 
@@ -162,20 +162,20 @@
             label5.TabIndex = 8;
             label5.Text = "Lista de Abonos Pagados";
             // 
-            // comboBox1
+            // cmbcréditoabono
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(31, 295);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(346, 28);
-            comboBox1.TabIndex = 9;
+            cmbcréditoabono.FormattingEnabled = true;
+            cmbcréditoabono.Location = new Point(31, 295);
+            cmbcréditoabono.Name = "cmbcréditoabono";
+            cmbcréditoabono.Size = new Size(346, 28);
+            cmbcréditoabono.TabIndex = 9;
             // 
-            // textBox1
+            // txtmontoabono
             // 
-            textBox1.Location = new Point(31, 217);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(346, 27);
-            textBox1.TabIndex = 10;
+            txtmontoabono.Location = new Point(31, 217);
+            txtmontoabono.Name = "txtmontoabono";
+            txtmontoabono.Size = new Size(346, 27);
+            txtmontoabono.TabIndex = 10;
             // 
             // panel1
             // 
@@ -185,15 +185,15 @@
             panel1.Size = new Size(836, 558);
             panel1.TabIndex = 11;
             // 
-            // dataGridView1
+            // dtvabono
             // 
-            dataGridView1.BackgroundColor = Color.SeaShell;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(414, 217);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(828, 461);
-            dataGridView1.TabIndex = 12;
+            dtvabono.BackgroundColor = Color.SeaShell;
+            dtvabono.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtvabono.Location = new Point(414, 217);
+            dtvabono.Name = "dtvabono";
+            dtvabono.RowHeadersWidth = 51;
+            dtvabono.Size = new Size(828, 461);
+            dtvabono.TabIndex = 12;
             // 
             // panel2
             // 
@@ -217,44 +217,44 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             ClientSize = new Size(1247, 683);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(dtvabono);
+            Controls.Add(txtmontoabono);
+            Controls.Add(cmbcréditoabono);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(iconPictureBox1);
-            Controls.Add(iconButton3);
-            Controls.Add(iconButton2);
-            Controls.Add(iconButton1);
+            Controls.Add(btnvolverAbono);
+            Controls.Add(btneliminarAbono);
+            Controls.Add(btnguardarAbono);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FormAbono";
             Text = "FormAbono";
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtvabono).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnguardarAbono;
+        private FontAwesome.Sharp.IconButton btneliminarAbono;
+        private FontAwesome.Sharp.IconButton btnvolverAbono;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
+        private ComboBox cmbcréditoabono;
+        private TextBox txtmontoabono;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView dtvabono;
         private Panel panel2;
         private Panel panel3;
     }

@@ -35,12 +35,12 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            btnborraruser = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
+            txtContraseñanueva = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseñaactual = new TextBox();
+            txtConfirmarcontraseña = new TextBox();
+            btnEliminaruser = new FontAwesome.Sharp.IconButton();
+            btnVolveruser = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             panel2 = new Panel();
             panel1.SuspendLayout();
@@ -125,81 +125,81 @@
             label6.TabIndex = 6;
             label6.Text = "Confirmar Contraseña";
             // 
-            // textBox1
+            // txtContraseñanueva
             // 
-            textBox1.Location = new Point(90, 157);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(352, 27);
-            textBox1.TabIndex = 8;
+            txtContraseñanueva.Location = new Point(90, 157);
+            txtContraseñanueva.Name = "txtContraseñanueva";
+            txtContraseñanueva.Size = new Size(352, 27);
+            txtContraseñanueva.TabIndex = 8;
             // 
-            // textBox2
+            // txtUsuario
             // 
-            textBox2.Location = new Point(90, 51);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(352, 27);
-            textBox2.TabIndex = 9;
+            txtUsuario.Location = new Point(90, 51);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(352, 27);
+            txtUsuario.TabIndex = 9;
             // 
-            // textBox3
+            // txtContraseñaactual
             // 
-            textBox3.Location = new Point(90, 104);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(352, 27);
-            textBox3.TabIndex = 10;
+            txtContraseñaactual.Location = new Point(90, 104);
+            txtContraseñaactual.Name = "txtContraseñaactual";
+            txtContraseñaactual.Size = new Size(352, 27);
+            txtContraseñaactual.TabIndex = 10;
             // 
-            // textBox4
+            // txtConfirmarcontraseña
             // 
-            textBox4.Location = new Point(90, 220);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(352, 27);
-            textBox4.TabIndex = 11;
+            txtConfirmarcontraseña.Location = new Point(90, 220);
+            txtConfirmarcontraseña.Name = "txtConfirmarcontraseña";
+            txtConfirmarcontraseña.Size = new Size(352, 27);
+            txtConfirmarcontraseña.TabIndex = 11;
             // 
-            // btnborraruser
+            // btnEliminaruser
             // 
-            btnborraruser.BackColor = Color.Firebrick;
-            btnborraruser.FlatStyle = FlatStyle.Popup;
-            btnborraruser.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnborraruser.ForeColor = Color.White;
-            btnborraruser.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            btnborraruser.IconColor = Color.White;
-            btnborraruser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnborraruser.Location = new Point(212, 296);
-            btnborraruser.Name = "btnborraruser";
-            btnborraruser.Size = new Size(87, 76);
-            btnborraruser.TabIndex = 12;
-            btnborraruser.Text = "Borrar";
-            btnborraruser.TextAlign = ContentAlignment.BottomCenter;
-            btnborraruser.UseVisualStyleBackColor = false;
+            btnEliminaruser.BackColor = Color.Firebrick;
+            btnEliminaruser.FlatStyle = FlatStyle.Popup;
+            btnEliminaruser.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminaruser.ForeColor = Color.White;
+            btnEliminaruser.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btnEliminaruser.IconColor = Color.White;
+            btnEliminaruser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnEliminaruser.Location = new Point(212, 296);
+            btnEliminaruser.Name = "btnEliminaruser";
+            btnEliminaruser.Size = new Size(87, 76);
+            btnEliminaruser.TabIndex = 12;
+            btnEliminaruser.Text = "Eliminar";
+            btnEliminaruser.TextAlign = ContentAlignment.BottomCenter;
+            btnEliminaruser.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btnVolveruser
             // 
-            iconButton3.BackColor = Color.LightCoral;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(101, 296);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(87, 76);
-            iconButton3.TabIndex = 13;
-            iconButton3.Text = "Volver";
-            iconButton3.TextAlign = ContentAlignment.BottomCenter;
-            iconButton3.UseVisualStyleBackColor = false;
+            btnVolveruser.BackColor = Color.LightCoral;
+            btnVolveruser.FlatStyle = FlatStyle.Flat;
+            btnVolveruser.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVolveruser.ForeColor = Color.White;
+            btnVolveruser.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            btnVolveruser.IconColor = Color.White;
+            btnVolveruser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnVolveruser.Location = new Point(101, 296);
+            btnVolveruser.Name = "btnVolveruser";
+            btnVolveruser.Size = new Size(87, 76);
+            btnVolveruser.TabIndex = 13;
+            btnVolveruser.Text = "Volver";
+            btnVolveruser.TextAlign = ContentAlignment.BottomCenter;
+            btnVolveruser.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(iconButton3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(btnborraruser);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(btnVolveruser);
+            panel1.Controls.Add(txtUsuario);
+            panel1.Controls.Add(btnEliminaruser);
+            panel1.Controls.Add(txtContraseñaactual);
+            panel1.Controls.Add(txtConfirmarcontraseña);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(btnguardaruser);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtContraseñanueva);
             panel1.Controls.Add(label5);
             panel1.Location = new Point(12, 110);
             panel1.Name = "panel1";
@@ -244,12 +244,12 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private FontAwesome.Sharp.IconButton btnborraruser;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private TextBox txtContraseñanueva;
+        private TextBox txtUsuario;
+        private TextBox txtContraseñaactual;
+        private TextBox txtConfirmarcontraseña;
+        private FontAwesome.Sharp.IconButton btnEliminaruser;
+        private FontAwesome.Sharp.IconButton btnVolveruser;
         private Panel panel1;
         private Panel panel2;
     }

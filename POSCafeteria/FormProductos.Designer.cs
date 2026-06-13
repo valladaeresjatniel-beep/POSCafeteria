@@ -31,26 +31,26 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            textBox1 = new TextBox();
+            btnGuardarproducto = new FontAwesome.Sharp.IconButton();
+            btnEliminarproducto = new FontAwesome.Sharp.IconButton();
+            txtNombreproducto = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtMarcaproducto = new TextBox();
+            txtPrecio = new TextBox();
+            txtDescripción = new TextBox();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            dataGridView1 = new DataGridView();
+            dtvProductos = new DataGridView();
             panel1 = new Panel();
-            panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            panel2 = new Panel();
+            btnvolverproducto = new FontAwesome.Sharp.IconButton();
             panel3 = new Panel();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtvProductos).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -83,46 +83,46 @@
             label3.TabIndex = 2;
             label3.Text = "Nombre del Producto";
             // 
-            // iconButton1
+            // btnGuardarproducto
             // 
-            iconButton1.BackColor = Color.ForestGreen;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(257, 511);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(94, 81);
-            iconButton1.TabIndex = 3;
-            iconButton1.Text = "Guardar";
-            iconButton1.TextAlign = ContentAlignment.BottomCenter;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnGuardarproducto.BackColor = Color.ForestGreen;
+            btnGuardarproducto.FlatStyle = FlatStyle.Flat;
+            btnGuardarproducto.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardarproducto.ForeColor = Color.White;
+            btnGuardarproducto.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnGuardarproducto.IconColor = Color.White;
+            btnGuardarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnGuardarproducto.Location = new Point(257, 511);
+            btnGuardarproducto.Name = "btnGuardarproducto";
+            btnGuardarproducto.Size = new Size(94, 81);
+            btnGuardarproducto.TabIndex = 3;
+            btnGuardarproducto.Text = "Guardar";
+            btnGuardarproducto.TextAlign = ContentAlignment.BottomCenter;
+            btnGuardarproducto.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnEliminarproducto
             // 
-            iconButton2.BackColor = Color.Firebrick;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(146, 511);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(94, 81);
-            iconButton2.TabIndex = 4;
-            iconButton2.Text = "Borrar";
-            iconButton2.TextAlign = ContentAlignment.BottomCenter;
-            iconButton2.UseVisualStyleBackColor = false;
+            btnEliminarproducto.BackColor = Color.Firebrick;
+            btnEliminarproducto.FlatStyle = FlatStyle.Flat;
+            btnEliminarproducto.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminarproducto.ForeColor = Color.White;
+            btnEliminarproducto.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btnEliminarproducto.IconColor = Color.White;
+            btnEliminarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnEliminarproducto.Location = new Point(146, 511);
+            btnEliminarproducto.Name = "btnEliminarproducto";
+            btnEliminarproducto.Size = new Size(94, 81);
+            btnEliminarproducto.TabIndex = 4;
+            btnEliminarproducto.Text = "Eliminar";
+            btnEliminarproducto.TextAlign = ContentAlignment.BottomCenter;
+            btnEliminarproducto.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtNombreproducto
             // 
-            textBox1.Location = new Point(29, 181);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(346, 27);
-            textBox1.TabIndex = 6;
+            txtNombreproducto.Location = new Point(29, 181);
+            txtNombreproducto.Name = "txtNombreproducto";
+            txtNombreproducto.Size = new Size(346, 27);
+            txtNombreproducto.TabIndex = 6;
             // 
             // label4
             // 
@@ -134,26 +134,26 @@
             label4.TabIndex = 7;
             label4.Text = "Marca del Producto";
             // 
-            // textBox2
+            // txtMarcaproducto
             // 
-            textBox2.Location = new Point(28, 161);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(346, 27);
-            textBox2.TabIndex = 8;
+            txtMarcaproducto.Location = new Point(28, 161);
+            txtMarcaproducto.Name = "txtMarcaproducto";
+            txtMarcaproducto.Size = new Size(346, 27);
+            txtMarcaproducto.TabIndex = 8;
             // 
-            // textBox3
+            // txtPrecio
             // 
-            textBox3.Location = new Point(28, 232);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(346, 27);
-            textBox3.TabIndex = 9;
+            txtPrecio.Location = new Point(28, 232);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(346, 27);
+            txtPrecio.TabIndex = 9;
             // 
-            // textBox4
+            // txtDescripción
             // 
-            textBox4.Location = new Point(28, 310);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(346, 27);
-            textBox4.TabIndex = 10;
+            txtDescripción.Location = new Point(28, 310);
+            txtDescripción.Name = "txtDescripción";
+            txtDescripción.Size = new Size(346, 27);
+            txtDescripción.TabIndex = 10;
             // 
             // label5
             // 
@@ -185,15 +185,15 @@
             label7.TabIndex = 13;
             label7.Text = "Lista de Productos";
             // 
-            // dataGridView1
+            // dtvProductos
             // 
-            dataGridView1.BackgroundColor = Color.SeaShell;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(400, 181);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(713, 429);
-            dataGridView1.TabIndex = 14;
+            dtvProductos.BackgroundColor = Color.SeaShell;
+            dtvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtvProductos.Location = new Point(400, 181);
+            dtvProductos.Name = "dtvProductos";
+            dtvProductos.RowHeadersWidth = 51;
+            dtvProductos.Size = new Size(713, 429);
+            dtvProductos.TabIndex = 14;
             // 
             // panel1
             // 
@@ -203,21 +203,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(717, 519);
             panel1.TabIndex = 15;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(iconButton3);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label6);
-            panel2.Location = new Point(0, 95);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(390, 519);
-            panel2.TabIndex = 16;
             // 
             // iconPictureBox1
             // 
@@ -233,6 +218,38 @@
             iconPictureBox1.TabIndex = 0;
             iconPictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(btnvolverproducto);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(txtPrecio);
+            panel2.Controls.Add(txtMarcaproducto);
+            panel2.Controls.Add(txtDescripción);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label6);
+            panel2.Location = new Point(0, 95);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(390, 519);
+            panel2.TabIndex = 16;
+            // 
+            // btnvolverproducto
+            // 
+            btnvolverproducto.BackColor = Color.LightCoral;
+            btnvolverproducto.FlatStyle = FlatStyle.Flat;
+            btnvolverproducto.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnvolverproducto.ForeColor = Color.White;
+            btnvolverproducto.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            btnvolverproducto.IconColor = Color.White;
+            btnvolverproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnvolverproducto.Location = new Point(32, 415);
+            btnvolverproducto.Name = "btnvolverproducto";
+            btnvolverproducto.Size = new Size(94, 81);
+            btnvolverproducto.TabIndex = 13;
+            btnvolverproducto.Text = "Volver";
+            btnvolverproducto.TextAlign = ContentAlignment.BottomCenter;
+            btnvolverproducto.UseVisualStyleBackColor = false;
+            // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.FixedSingle;
@@ -241,34 +258,17 @@
             panel3.Size = new Size(1113, 97);
             panel3.TabIndex = 17;
             // 
-            // iconButton3
-            // 
-            iconButton3.BackColor = Color.LightCoral;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(32, 415);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(94, 81);
-            iconButton3.TabIndex = 13;
-            iconButton3.Text = "Volver";
-            iconButton3.TextAlign = ContentAlignment.BottomCenter;
-            iconButton3.UseVisualStyleBackColor = false;
-            // 
             // FormProductos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             ClientSize = new Size(1115, 617);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtvProductos);
             Controls.Add(label7);
-            Controls.Add(textBox1);
-            Controls.Add(iconButton2);
-            Controls.Add(iconButton1);
+            Controls.Add(txtNombreproducto);
+            Controls.Add(btnEliminarproducto);
+            Controls.Add(btnGuardarproducto);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -277,11 +277,11 @@
             Controls.Add(panel3);
             Name = "FormProductos";
             Text = "FormProductos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtvProductos).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,21 +291,21 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private TextBox textBox1;
+        private FontAwesome.Sharp.IconButton btnGuardarproducto;
+        private FontAwesome.Sharp.IconButton btnEliminarproducto;
+        private TextBox txtNombreproducto;
         private Label label4;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtMarcaproducto;
+        private TextBox txtPrecio;
+        private TextBox txtDescripción;
         private Label label5;
         private Label label6;
         private Label label7;
-        private DataGridView dataGridView1;
+        private DataGridView dtvProductos;
         private Panel panel1;
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnvolverproducto;
         private Panel panel3;
     }
 }

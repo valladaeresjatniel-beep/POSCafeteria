@@ -36,12 +36,14 @@
             label6 = new Label();
             dtvcrédito = new DataGridView();
             panel2 = new Panel();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            label7 = new Label();
+            txtPrecioventa = new TextBox();
+            cmbClienteventa = new ComboBox();
+            cmbProductoventa = new ComboBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             btnguardarcrédito = new FontAwesome.Sharp.IconButton();
             btneliminarcrédito = new FontAwesome.Sharp.IconButton();
-            txtprecio = new TextBox();
+            txtCantidadventa = new TextBox();
             label5 = new Label();
             label4 = new Label();
             panel3 = new Panel();
@@ -131,13 +133,15 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(comboBox2);
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(txtPrecioventa);
+            panel2.Controls.Add(cmbClienteventa);
+            panel2.Controls.Add(cmbProductoventa);
             panel2.Controls.Add(iconButton1);
             panel2.Controls.Add(btnguardarcrédito);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(btneliminarcrédito);
-            panel2.Controls.Add(txtprecio);
+            panel2.Controls.Add(txtCantidadventa);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
@@ -146,21 +150,38 @@
             panel2.Size = new Size(390, 638);
             panel2.TabIndex = 4;
             // 
-            // comboBox2
+            // label7
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(18, 175);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(343, 28);
-            comboBox2.TabIndex = 14;
+            label7.AutoSize = true;
+            label7.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(20, 293);
+            label7.Name = "label7";
+            label7.Size = new Size(68, 20);
+            label7.TabIndex = 7;
+            label7.Text = "Precio";
             // 
-            // comboBox1
+            // txtPrecioventa
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(20, 109);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(343, 28);
-            comboBox1.TabIndex = 13;
+            txtPrecioventa.Location = new Point(17, 316);
+            txtPrecioventa.Name = "txtPrecioventa";
+            txtPrecioventa.Size = new Size(346, 27);
+            txtPrecioventa.TabIndex = 15;
+            // 
+            // cmbClienteventa
+            // 
+            cmbClienteventa.FormattingEnabled = true;
+            cmbClienteventa.Location = new Point(18, 175);
+            cmbClienteventa.Name = "cmbClienteventa";
+            cmbClienteventa.Size = new Size(345, 28);
+            cmbClienteventa.TabIndex = 14;
+            // 
+            // cmbProductoventa
+            // 
+            cmbProductoventa.FormattingEnabled = true;
+            cmbProductoventa.Location = new Point(20, 109);
+            cmbProductoventa.Name = "cmbProductoventa";
+            cmbProductoventa.Size = new Size(343, 28);
+            cmbProductoventa.TabIndex = 13;
             // 
             // iconButton1
             // 
@@ -214,12 +235,12 @@
             btneliminarcrédito.TextAlign = ContentAlignment.BottomCenter;
             btneliminarcrédito.UseVisualStyleBackColor = false;
             // 
-            // txtprecio
+            // txtCantidadventa
             // 
-            txtprecio.Location = new Point(17, 246);
-            txtprecio.Name = "txtprecio";
-            txtprecio.Size = new Size(346, 27);
-            txtprecio.TabIndex = 7;
+            txtCantidadventa.Location = new Point(17, 246);
+            txtCantidadventa.Name = "txtCantidadventa";
+            txtCantidadventa.Size = new Size(346, 27);
+            txtCantidadventa.TabIndex = 7;
             // 
             // label5
             // 
@@ -227,9 +248,9 @@
             label5.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(20, 223);
             label5.Name = "label5";
-            label5.Size = new Size(68, 20);
+            label5.Size = new Size(93, 20);
             label5.TabIndex = 6;
-            label5.Text = "Precio";
+            label5.Text = "Cantidad";
             // 
             // label4
             // 
@@ -281,7 +302,7 @@
         private DataGridView dtvcrédito;
         private Panel panel2;
         private Label label4;
-        private TextBox txtprecio;
+        private TextBox txtCantidadventa;
         private Label label5;
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -289,7 +310,9 @@
         private FontAwesome.Sharp.IconButton btnguardarcrédito;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Panel panel3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox cmbClienteventa;
+        private ComboBox cmbProductoventa;
+        private Label label7;
+        private TextBox txtPrecioventa;
     }
 }

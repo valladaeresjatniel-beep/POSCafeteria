@@ -28,78 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
+            btnGuardarClientes = new FontAwesome.Sharp.IconButton();
+            btnVolverclientes = new FontAwesome.Sharp.IconButton();
+            btnEliminarClientes = new FontAwesome.Sharp.IconButton();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtTelefono = new TextBox();
+            txtNombreclientes = new TextBox();
+            txtDirección = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            dataGridView1 = new DataGridView();
+            dtvClientes = new DataGridView();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtvClientes).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // iconButton1
+            // btnGuardarClientes
             // 
-            iconButton1.BackColor = Color.ForestGreen;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(258, 475);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(94, 81);
-            iconButton1.TabIndex = 0;
-            iconButton1.Text = "Guardar";
-            iconButton1.TextAlign = ContentAlignment.BottomCenter;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnGuardarClientes.BackColor = Color.ForestGreen;
+            btnGuardarClientes.FlatStyle = FlatStyle.Flat;
+            btnGuardarClientes.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardarClientes.ForeColor = Color.White;
+            btnGuardarClientes.IconChar = FontAwesome.Sharp.IconChar.Save;
+            btnGuardarClientes.IconColor = Color.White;
+            btnGuardarClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnGuardarClientes.Location = new Point(258, 475);
+            btnGuardarClientes.Name = "btnGuardarClientes";
+            btnGuardarClientes.Size = new Size(94, 81);
+            btnGuardarClientes.TabIndex = 0;
+            btnGuardarClientes.Text = "Guardar";
+            btnGuardarClientes.TextAlign = ContentAlignment.BottomCenter;
+            btnGuardarClientes.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnVolverclientes
             // 
-            iconButton2.BackColor = Color.LightCoral;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(33, 475);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(94, 81);
-            iconButton2.TabIndex = 1;
-            iconButton2.Text = "Volver";
-            iconButton2.TextAlign = ContentAlignment.BottomCenter;
-            iconButton2.UseVisualStyleBackColor = false;
+            btnVolverclientes.BackColor = Color.LightCoral;
+            btnVolverclientes.FlatStyle = FlatStyle.Flat;
+            btnVolverclientes.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVolverclientes.ForeColor = Color.White;
+            btnVolverclientes.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            btnVolverclientes.IconColor = Color.White;
+            btnVolverclientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnVolverclientes.Location = new Point(33, 475);
+            btnVolverclientes.Name = "btnVolverclientes";
+            btnVolverclientes.Size = new Size(94, 81);
+            btnVolverclientes.TabIndex = 1;
+            btnVolverclientes.Text = "Volver";
+            btnVolverclientes.TextAlign = ContentAlignment.BottomCenter;
+            btnVolverclientes.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btnEliminarClientes
             // 
-            iconButton3.BackColor = Color.Firebrick;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(142, 475);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(94, 81);
-            iconButton3.TabIndex = 2;
-            iconButton3.Text = "Eliminar";
-            iconButton3.TextAlign = ContentAlignment.BottomCenter;
-            iconButton3.UseVisualStyleBackColor = false;
+            btnEliminarClientes.BackColor = Color.Firebrick;
+            btnEliminarClientes.FlatStyle = FlatStyle.Flat;
+            btnEliminarClientes.Font = new Font("Verdana", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminarClientes.ForeColor = Color.White;
+            btnEliminarClientes.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            btnEliminarClientes.IconColor = Color.White;
+            btnEliminarClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnEliminarClientes.Location = new Point(142, 475);
+            btnEliminarClientes.Name = "btnEliminarClientes";
+            btnEliminarClientes.Size = new Size(94, 81);
+            btnEliminarClientes.TabIndex = 2;
+            btnEliminarClientes.Text = "Eliminar";
+            btnEliminarClientes.TextAlign = ContentAlignment.BottomCenter;
+            btnEliminarClientes.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -121,27 +121,27 @@
             label2.TabIndex = 4;
             label2.Text = "Adminstración de Clientes";
             // 
-            // textBox1
+            // txtTelefono
             // 
-            textBox1.Location = new Point(28, 252);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(346, 27);
-            textBox1.TabIndex = 5;
+            txtTelefono.Location = new Point(28, 252);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(346, 27);
+            txtTelefono.TabIndex = 5;
             // 
-            // textBox2
+            // txtNombreclientes
             // 
-            textBox2.Location = new Point(28, 109);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(346, 27);
-            textBox2.TabIndex = 6;
+            txtNombreclientes.Location = new Point(28, 109);
+            txtNombreclientes.Name = "txtNombreclientes";
+            txtNombreclientes.Size = new Size(346, 27);
+            txtNombreclientes.TabIndex = 6;
             // 
-            // textBox3
+            // txtDirección
             // 
-            textBox3.BackColor = SystemColors.Window;
-            textBox3.Location = new Point(28, 179);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(346, 27);
-            textBox3.TabIndex = 7;
+            txtDirección.BackColor = SystemColors.Window;
+            txtDirección.Location = new Point(28, 179);
+            txtDirección.Name = "txtDirección";
+            txtDirección.Size = new Size(346, 27);
+            txtDirección.TabIndex = 7;
             // 
             // label3
             // 
@@ -197,24 +197,24 @@
             iconPictureBox1.TabIndex = 12;
             iconPictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dtvClientes
             // 
-            dataGridView1.BackgroundColor = Color.SeaShell;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(414, 156);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(764, 423);
-            dataGridView1.TabIndex = 13;
+            dtvClientes.BackgroundColor = Color.SeaShell;
+            dtvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtvClientes.Location = new Point(414, 156);
+            dtvClientes.Name = "dtvClientes";
+            dtvClientes.RowHeadersWidth = 51;
+            dtvClientes.Size = new Size(764, 423);
+            dtvClientes.TabIndex = 13;
             // 
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtTelefono);
+            panel1.Controls.Add(txtNombreclientes);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(txtDirección);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(4, 78);
@@ -244,20 +244,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             ClientSize = new Size(1182, 584);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtvClientes);
             Controls.Add(iconPictureBox1);
             Controls.Add(label6);
             Controls.Add(label1);
-            Controls.Add(iconButton3);
-            Controls.Add(iconButton2);
-            Controls.Add(iconButton1);
+            Controls.Add(btnEliminarClientes);
+            Controls.Add(btnVolverclientes);
+            Controls.Add(btnGuardarClientes);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FormClientes";
             Text = "FormClientes";
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtvClientes).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -266,20 +266,20 @@
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnGuardarClientes;
+        private FontAwesome.Sharp.IconButton btnVolverclientes;
+        private FontAwesome.Sharp.IconButton btnEliminarClientes;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtTelefono;
+        private TextBox txtNombreclientes;
+        private TextBox txtDirección;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dtvClientes;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
