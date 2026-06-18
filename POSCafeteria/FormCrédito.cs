@@ -45,8 +45,9 @@ namespace POSCafeteria
                     dtvcrédito.Columns["Cantidad"].HeaderText = "Cantidad";
                     dtvcrédito.Columns["Precio"].HeaderText = "Precio (C$)";
                     dtvcrédito.Columns["Fecha"].HeaderText = "Fecha";
+                    dtvcrédito.Columns["IdCredito"].Visible = true;
 
-                    dtvcrédito.Columns["IdCredito"].Visible = false;
+                    
                     dtvcrédito.AutoResizeColumns();
                     dtvcrédito.ReadOnly = true;
                     dtvcrédito.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -231,7 +232,7 @@ namespace POSCafeteria
             this.Close();
         }
 
-        
+
         private void btnguardarcrédito_Click_1(object sender, EventArgs e)
         {
             if (cmbClienteventa.SelectedItem == null ||
@@ -336,7 +337,9 @@ namespace POSCafeteria
             }
         }
 
-       
-        
+        private void dtvcrédito_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

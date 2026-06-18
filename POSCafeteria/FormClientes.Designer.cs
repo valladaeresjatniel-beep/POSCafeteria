@@ -209,6 +209,7 @@
             dtvClientes.RowHeadersWidth = 51;
             dtvClientes.Size = new Size(764, 423);
             dtvClientes.TabIndex = 13;
+            dtvClientes.CellContentClick += dtvClientes_CellContentClick;
             // 
             // panel1
             // 

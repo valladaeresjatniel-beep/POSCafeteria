@@ -130,6 +130,7 @@
             dtvcrédito.RowHeadersWidth = 51;
             dtvcrédito.Size = new Size(881, 465);
             dtvcrédito.TabIndex = 0;
+            dtvcrédito.CellContentClick += dtvcrédito_CellContentClick;
             // 
             // panel2
             // 
@@ -154,8 +155,10 @@
             // 
             // añadircredito
             // 
-            
-           
+            añadircredito.Location = new Point(0, 0);
+            añadircredito.Name = "añadircredito";
+            añadircredito.Size = new Size(75, 23);
+            añadircredito.TabIndex = 0;
             // 
             // label7
             // 

@@ -38,7 +38,7 @@ namespace POSCafeteria
                     dtvabono.Columns["Monto_Pagado"].HeaderText = "Monto (C$)";
                     dtvabono.Columns["Fecha_Pago"].HeaderText = "Fecha";
 
-                    dtvabono.Columns["IdAbono"].Visible = false;
+                    dtvabono.Columns["IdAbono"].Visible = true;
                     dtvabono.AutoResizeColumns();
                     dtvabono.ReadOnly = true;
                     dtvabono.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -108,7 +108,7 @@ namespace POSCafeteria
                     if (dtvabono.CurrentRow != null &&
                         dtvabono.CurrentRow.Cells["IdAbono"].Value != null)
                     {
-                        // ACTUALIZAR
+                        
                         int id = Convert.ToInt32(dtvabono.CurrentRow.Cells["IdAbono"].Value);
                         string sql = "UPDATE Abono SET Monto_Pagado = @monto, IdCredito = @idcredito WHERE IdAbono = @id";
                         SqlCommand cmd = new SqlCommand(sql, con);
@@ -120,7 +120,7 @@ namespace POSCafeteria
                     }
                     else
                     {
-                        // INSERTAR
+                        
                         string sql = "INSERT INTO Abono (Monto_Pagado, IdCredito, Fecha_Pago) VALUES (@monto, @idcredito, @fecha)";
                         SqlCommand cmd = new SqlCommand(sql, con);
                         cmd.Parameters.AddWithValue("@monto", monto);
@@ -274,8 +274,9 @@ namespace POSCafeteria
             }
         }
 
-     
-            
-        
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

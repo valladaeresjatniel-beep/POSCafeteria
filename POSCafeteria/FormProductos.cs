@@ -28,11 +28,12 @@ namespace POSCafeteria
                     da.Fill(dt);
                     dtvProductos.DataSource = dt;
 
-                    dtvProductos.Columns["IdProducto"].Visible = false;
+                    
                     dtvProductos.Columns["Nombre"].HeaderText = "Nombre";
                     dtvProductos.Columns["Marca"].HeaderText = "Marca";
                     dtvProductos.Columns["Precio"].HeaderText = "Precio (C$)";
                     dtvProductos.Columns["Descripcion"].HeaderText = "Descripción";
+                    dtvProductos.Columns["IdProducto"].Visible = true;
 
                     dtvProductos.AutoResizeColumns();
                     dtvProductos.ReadOnly = true;

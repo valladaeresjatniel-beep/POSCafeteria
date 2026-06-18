@@ -25,7 +25,7 @@ namespace POSCafeteria
                 using (SqlConnection con = ConexionDB.ObtenerConexion())
                 {
                     con.Open();
-                    string sql = "SELECT IdCliente, Nombre, Direccion, Telefono FROM Cliente";
+                    string sql = "SELECT IdCliente, Nombre, Direccion, Telefono FROM Cliente ORDER BY IdCliente ASC";
                     SqlDataAdapter da = new SqlDataAdapter(sql, con);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
@@ -36,7 +36,7 @@ namespace POSCafeteria
                     dtvClientes.Columns["Direccion"].HeaderText = "Dirección";
                     dtvClientes.Columns["Telefono"].HeaderText = "Teléfono";
 
-                    dtvClientes.Columns["IdCliente"].Visible = false;
+                    dtvClientes.Columns["IdCliente"].Visible = true;
                     dtvClientes.AutoResizeColumns();
                     dtvClientes.ReadOnly = true;
                     dtvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -78,7 +78,7 @@ namespace POSCafeteria
                     if (dtvClientes.CurrentRow != null &&
                         dtvClientes.CurrentRow.Cells["IdCliente"].Value != null)
                     {
-                       
+
                         int id = Convert.ToInt32(dtvClientes.CurrentRow.Cells["IdCliente"].Value);
                         string sql = "UPDATE Cliente SET Nombre = @nombre, Direccion = @dir, Telefono = @tel WHERE IdCliente = @id";
                         SqlCommand cmd = new SqlCommand(sql, con);
@@ -91,7 +91,7 @@ namespace POSCafeteria
                     }
                     else
                     {
-                       
+
                         string sql = "INSERT INTO Cliente (Nombre, Direccion, Telefono) VALUES (@nombre, @dir, @tel)";
                         SqlCommand cmd = new SqlCommand(sql, con);
                         cmd.Parameters.AddWithValue("@nombre", txtNombreclientes.Text);
@@ -226,6 +226,11 @@ namespace POSCafeteria
             {
                 MessageBox.Show("Error al guardar:\n" + ex.Message);
             }
+        }
+
+        private void dtvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
