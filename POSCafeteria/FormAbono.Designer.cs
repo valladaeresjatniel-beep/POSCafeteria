@@ -63,6 +63,7 @@
             btnguardarAbono.Text = "Guardar";
             btnguardarAbono.TextAlign = ContentAlignment.BottomCenter;
             btnguardarAbono.UseVisualStyleBackColor = false;
+            btnguardarAbono.Click += btnguardarAbono_Click_1;
             // 
             // btneliminarAbono
             // 
@@ -80,6 +81,7 @@
             btneliminarAbono.Text = "Eliminar";
             btneliminarAbono.TextAlign = ContentAlignment.BottomCenter;
             btneliminarAbono.UseVisualStyleBackColor = false;
+            btneliminarAbono.Click += btneliminarAbono_Click_1;
             // 
             // btnvolverAbono
             // 
@@ -97,6 +99,7 @@
             btnvolverAbono.Text = "Volver";
             btnvolverAbono.TextAlign = ContentAlignment.BottomCenter;
             btnvolverAbono.UseVisualStyleBackColor = false;
+            btnvolverAbono.Click += btnvolverAbono_Click;
             // 
             // iconPictureBox1
             // 
@@ -194,6 +197,7 @@
             dtvabono.RowHeadersWidth = 51;
             dtvabono.Size = new Size(828, 461);
             dtvabono.TabIndex = 12;
+            dtvabono.CellContentClick += dtvabono_CellContentClick;
             // 
             // panel2
             // 
@@ -234,6 +238,7 @@
             Controls.Add(panel1);
             Name = "FormAbono";
             Text = "FormAbono";
+            Load += FormAbono_Load;
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtvabono).EndInit();
             ResumeLayout(false);

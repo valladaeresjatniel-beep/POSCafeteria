@@ -99,6 +99,7 @@
             btnGuardarproducto.Text = "Guardar";
             btnGuardarproducto.TextAlign = ContentAlignment.BottomCenter;
             btnGuardarproducto.UseVisualStyleBackColor = false;
+            btnGuardarproducto.Click += btnGuardarproducto_Click_1;
             // 
             // btnEliminarproducto
             // 
@@ -116,6 +117,7 @@
             btnEliminarproducto.Text = "Eliminar";
             btnEliminarproducto.TextAlign = ContentAlignment.BottomCenter;
             btnEliminarproducto.UseVisualStyleBackColor = false;
+            btnEliminarproducto.Click += btnEliminarproducto_Click_1;
             // 
             // txtNombreproducto
             // 
@@ -194,6 +196,7 @@
             dtvProductos.RowHeadersWidth = 51;
             dtvProductos.Size = new Size(713, 429);
             dtvProductos.TabIndex = 14;
+            dtvProductos.CellContentClick += dtvProductos_CellContentClick;
             // 
             // panel1
             // 
@@ -249,6 +252,7 @@
             btnvolverproducto.Text = "Volver";
             btnvolverproducto.TextAlign = ContentAlignment.BottomCenter;
             btnvolverproducto.UseVisualStyleBackColor = false;
+            btnvolverproducto.Click += btnvolverproducto_Click;
             // 
             // panel3
             // 

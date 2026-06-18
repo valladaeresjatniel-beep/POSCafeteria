@@ -36,6 +36,7 @@
             label6 = new Label();
             dtvcrédito = new DataGridView();
             panel2 = new Panel();
+            añadircredito = new Button();
             label7 = new Label();
             txtPrecioventa = new TextBox();
             cmbClienteventa = new ComboBox();
@@ -133,6 +134,7 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(añadircredito);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(txtPrecioventa);
             panel2.Controls.Add(cmbClienteventa);
@@ -149,6 +151,11 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(390, 638);
             panel2.TabIndex = 4;
+            // 
+            // añadircredito
+            // 
+            
+           
             // 
             // label7
             // 
@@ -217,6 +224,7 @@
             btnguardarcrédito.Text = "Guardar";
             btnguardarcrédito.TextAlign = ContentAlignment.BottomCenter;
             btnguardarcrédito.UseVisualStyleBackColor = false;
+            btnguardarcrédito.Click += btnguardarcrédito_Click_1;
             // 
             // btneliminarcrédito
             // 
@@ -234,6 +242,7 @@
             btneliminarcrédito.Text = "Eliminar";
             btneliminarcrédito.TextAlign = ContentAlignment.BottomCenter;
             btneliminarcrédito.UseVisualStyleBackColor = false;
+            btneliminarcrédito.Click += btneliminarcrédito_Click_1;
             // 
             // txtCantidadventa
             // 
@@ -314,5 +323,6 @@
         private ComboBox cmbProductoventa;
         private Label label7;
         private TextBox txtPrecioventa;
+        private Button añadircredito;
     }
 }

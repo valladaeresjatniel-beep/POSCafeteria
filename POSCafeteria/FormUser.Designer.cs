@@ -63,6 +63,7 @@
             btnguardaruser.Text = "Guardar";
             btnguardaruser.TextAlign = ContentAlignment.BottomCenter;
             btnguardaruser.UseVisualStyleBackColor = false;
+            btnguardaruser.Click += btnguardaruser_Click_1;
             // 
             // label1
             // 
@@ -186,6 +187,7 @@
             btnVolveruser.Text = "Volver";
             btnVolveruser.TextAlign = ContentAlignment.BottomCenter;
             btnVolveruser.UseVisualStyleBackColor = false;
+            btnVolveruser.Click += btnVolveruser_Click;
             // 
             // panel1
             // 
@@ -227,6 +229,7 @@
             Controls.Add(panel2);
             Name = "FormUser";
             Text = "FormUser";
+            Load += FormUser_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

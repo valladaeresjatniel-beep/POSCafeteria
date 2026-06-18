@@ -143,6 +143,7 @@
             lblFecha.TabIndex = 13;
             lblFecha.Text = "29/5/2026";
             lblFecha.UseWaitCursor = true;
+            lblFecha.Click += lblFecha_Click;
             // 
             // label8
             // 

@@ -21,6 +21,7 @@ namespace POSCafeteria
         }
 
 
+
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             lblBienvenido.Text = $"¡Bienvenido(a), {_usuarioSesion.NombreCompleto}!";
@@ -73,12 +74,28 @@ namespace POSCafeteria
             this.Hide();
             frmUser.Show();
         }
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
 
+            if (MessageBox.Show("¿Estás seguro de que deseas cerrar la sesión?", "Confirmar cierre de sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
         private void btnAbonoprincipal_Click(object sender, EventArgs e)
         {
             FormAbono formAbono = new FormAbono();
             this.Hide();
             formAbono.Show();
+        }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }

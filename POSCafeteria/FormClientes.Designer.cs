@@ -66,6 +66,7 @@
             btnGuardarClientes.Text = "Guardar";
             btnGuardarClientes.TextAlign = ContentAlignment.BottomCenter;
             btnGuardarClientes.UseVisualStyleBackColor = false;
+            btnGuardarClientes.Click += btnGuardarClientes_Click_1;
             // 
             // btnVolverclientes
             // 
@@ -83,6 +84,7 @@
             btnVolverclientes.Text = "Volver";
             btnVolverclientes.TextAlign = ContentAlignment.BottomCenter;
             btnVolverclientes.UseVisualStyleBackColor = false;
+            btnVolverclientes.Click += btnVolverclientes_Click;
             // 
             // btnEliminarClientes
             // 
@@ -100,6 +102,7 @@
             btnEliminarClientes.Text = "Eliminar";
             btnEliminarClientes.TextAlign = ContentAlignment.BottomCenter;
             btnEliminarClientes.UseVisualStyleBackColor = false;
+            btnEliminarClientes.Click += btnEliminarClientes_Click_1;
             // 
             // label1
             // 
@@ -256,6 +259,7 @@
             Controls.Add(panel1);
             Name = "FormClientes";
             Text = "FormClientes";
+            Load += FormClientes_Load;
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtvClientes).EndInit();
             panel1.ResumeLayout(false);
